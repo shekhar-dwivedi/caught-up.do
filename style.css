@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&family=Lato&family=Poppins:ital,wght@1,300&family=Roboto:wght@700&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Karla:wght@500&family=Lato&family=Poppins:ital,wght@1,300&family=Roboto:wght@700&family=Sriracha&display=swap');
+/* Specifying the basics */
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    transition-property: scroll;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+}
+/* Body BG Color */
+body{
+    background-color: #2B1887;
+}
+/* Title of the Web-Page */
+h1{
+    display: inline-block;
+    background-color: #D5CCFF;
+    padding: 0.8%;
+    margin-top: 2%;
+    border-radius: 12px;
+    color: #2B1887;
+    transition: transform 1s;
+    font-family: 'DM Sans', sans-serif;
+}
+h1:hover{
+    transform: scale(1.04);
+}
+/* Design of Add Task Form */
+.ipform{
+    margin-top: 2%;
+}
+#taskname, #taskdes{
+    width: 50%;
+    height: 40px;
+    margin-bottom: 1%;
+    border-radius: 5px;
+    border: none;
+    padding-left: 1%;
+    background-color: #F4F2FF;
+    color: #2B1887;
+    font-weight: 700;
+    transition: transform 0.2s;
+}
+#addtask{
+    margin: 0 0 3% 2%;
+    width: 10%;
+    padding: 1% 0%;
+    align-items: right;
+    border: none;
+    border-radius: 9px;
+    background-color: #E42C5F;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+/* Design Elements for the divs */
+#todo, #done{
+    background-color: #D5CCFF;
+}
+.container{
+    display: flex;
+}
+/* To-Do Section Design */
+#todo{
+    width: 50%;
+    margin: 4%;
+    margin-top: 2%;
+    border-radius: 23px;
+}
+#done{
+    width: 50%;
+    margin: 4%;
+    margin-top: 2%;
+    border-radius: 23px;
+}
+h2{
+    margin: 5% 0 0 5%;
+}
+.taskcontainer, .task2container{
+    margin-bottom: 5%;
+}
+.taskcontainer div, .task2container div{
+    background-color: #F4F2FF;
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+    border-radius: 20px;
+    transition: transform 0.4s;
+    word-wrap: break-word;
+}
+.taskcontainer div:hover, .task2container div:hover{
+    transform: scale(1.04);
+}
+.taskcontainer div p, .task2container div p{
+    font-size: 150%;
+    font-weight: bold;
+    padding: 2%;
+}
+.taskcontainer div span, .task2container div span{
+    font-size: 90%;
+    font-weight: 200;
+    padding: 0 0 4% 2%;
+}
+#todo .taskcontainer div button{
+    margin: 0 0 3% 2%;
+    width: 20%;
+    padding: 2% 0.5%;
+    align-items: right;
+    border: none;
+    border-radius: 9px;
+    background-color: #ECB800;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+#done .task2container div button{
+    margin: 0 0 3% 2%;
+    width: 20%;
+    padding: 2% 0.5%;
+    align-items: right;
+    border: none;
+    border-radius: 9px;
+    background-color: #E42C5F;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+#complete:hover, #delete:hover, #addtask:hover, #taskname:hover, #taskdes:hover{
+    transform: scale(1.02);
+}
+@media screen and (max-width: 917px) {
+    h1{
+        margin-top: 10%;
+        font-size: 180%;
+    }
+    #taskname, #taskdes{
+        width: 90%;
+    }
+    #addtask{
+        margin-top: 5%;
+        width: 25%;
+        padding: 2% 0;
+    }
+    .container{
+        flex-direction: column;
+    }
+    #todo, #done{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 917px) {
+    #todo .taskcontainer div button, #done .task2container div button{
+        width: 30%;
+    }
+}
